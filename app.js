@@ -3,6 +3,13 @@ console.log('-------------------------------')
 console.log('	Мирик Топ	') 
 console.log('-------------------------------')
 console.log('')
+setInterval(() => {
+var request = require("request");
+var url = "http://miricgamebot.herokuapp.com" // My heroku app
+request(url, (error, response, body) => {
+console.log(body)
+})
+}, 300000)
 var express = require('express');
 var app     = express();
 
