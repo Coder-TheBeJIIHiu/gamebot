@@ -1,1 +1,1 @@
-worker: node invest.js
+worker: node app.js
